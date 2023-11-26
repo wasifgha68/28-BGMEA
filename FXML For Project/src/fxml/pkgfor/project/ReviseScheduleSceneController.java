@@ -6,7 +6,11 @@ package fxml.pkgfor.project;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
 
 /**
  * FXML Controller class
@@ -15,6 +19,15 @@ import javafx.fxml.Initializable;
  */
 public class ReviseScheduleSceneController implements Initializable {
 
+    @FXML
+    private ComboBox<?> deptComboBox;
+    @FXML
+    private TableColumn<?, ?> empIdTable;
+    @FXML
+    private TableColumn<?, ?> shiftTimeTable;
+    @FXML
+    private TableColumn<?, ?> taskTable;
+
     /**
      * Initializes the controller class.
      */
@@ -22,5 +35,9 @@ public class ReviseScheduleSceneController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void loadScheduleOnMouseClicked(ActionEvent event) {
+    }
     
 }

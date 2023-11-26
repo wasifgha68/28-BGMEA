@@ -2,41 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/CreateInspectionReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/FabricORMaterialListScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/SendingReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/FabricORMaterialListSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/CostReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/UploadWorkmanshipReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/JobsSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/JobsScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/IncidentReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/TrainingMaterialScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/UpdateProductionPlanScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/IncidentReportScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/FXMLForProject.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/JobProgressScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/CreateSampleOrderScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/CostReportScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/QualityControlReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/ReviseScheduleScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/InventoryRecordSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/UpdateProductionPlanSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/CreateSampleOrderSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/ProductionSupervisorDashboardController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/ReviseScheduleSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/CreateInspectionReportScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/JobProgressSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/TrainingMaterialSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/UpdateComplianceStatusSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/GarmentListScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/UpdateComplianceStatusScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/InventoryRecordScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/QualityControlReportScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/GarmentListSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/UploadWorkmanshipReportScene.fxml</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/FXML%20For%20Project/src/fxml/pkgfor/project/SendingReportScene.fxml</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

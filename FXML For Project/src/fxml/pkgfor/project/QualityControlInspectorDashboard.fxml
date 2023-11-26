@@ -9,23 +9,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.pkgfor.project.QualityControlInspectorDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Acount">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#logoutOnMouseClicked" text="Log Out" />
             </items>
           </Menu>
         </menus>
@@ -34,22 +24,22 @@
    <left>
       <VBox prefHeight="448.0" prefWidth="122.0" style="-fx-background-color: ff80ed;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="122.0" style="-fx-background-color: ff80ed;" text="Quality Control Inspector" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="403.0" text="Garment List" />
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="128.0" text="Fabric/Material List" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="122.0" text="Inspection Report" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="172.0" text="Worksmanship Report" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="171.0" text="Compliance Status" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="153.0" text="Training Material" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="208.0" text="Sample Order List" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="158.0" text="Quality Control Report" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#dashboardOnMouseClicked" prefHeight="55.0" prefWidth="122.0" style="-fx-background-color: ff80ed;" text="Quality Control Inspector" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#garmentListOnMouseClicked" prefHeight="31.0" prefWidth="403.0" text="Garment List" />
+            <Button mnemonicParsing="false" onAction="#fabMatListOnMouseClicked" prefHeight="53.0" prefWidth="128.0" text="Fabric/Material List" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#inspectionReportOnMouseClicked" prefHeight="57.0" prefWidth="122.0" text="Inspection Report" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#worksmanshipReportOnMouseClicked" prefHeight="55.0" prefWidth="172.0" text="Worksmanship Report" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#complianceStatusOnMouseClicked" prefHeight="55.0" prefWidth="171.0" text="Compliance Status" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#trainingMatOnMouseClicked" prefHeight="54.0" prefWidth="153.0" text="Training Material" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#sampleOrderOnMouseClicked" prefHeight="52.0" prefWidth="208.0" text="Sample Order List" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#QRCReportOnMouseClicked" prefHeight="52.0" prefWidth="158.0" text="Quality Control Report" wrapText="true" />
          </children>
       </VBox>
    </left>
    <bottom>
-      <Label prefHeight="21.0" prefWidth="649.0" text="Welcome {UsersName}" BorderPane.alignment="CENTER" />
+      <Label fx:id="nameLabel" prefHeight="21.0" prefWidth="649.0" text="Welcome {UsersName}" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lavender;" BorderPane.alignment="CENTER" />
+      <AnchorPane fx:id="dashboardAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lavender;" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

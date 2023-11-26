@@ -9,23 +9,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.pkgfor.project.ProductionSupervisorDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Account">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#logOutOnMouseClicked" text="Log Out" />
             </items>
           </Menu>
         </menus>
@@ -34,22 +24,22 @@
    <left>
       <VBox prefHeight="347.0" prefWidth="125.0" style="-fx-background-color: ff80ed;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="125.0" style="-fx-background-color: ff80ed;" text="Production Supervisor" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Assign Jobs" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="228.0" text="Job Progress" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="138.0" text="Schedule" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="155.0" text="Report" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" text="Production Plan" wrapText="true" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="135.0" text="Inventory" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" text="Cost Report" />
-            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="130.0" text="Incident Report" />
+            <Button mnemonicParsing="false" onAction="#dashboardOnMouseClicked" prefHeight="52.0" prefWidth="125.0" style="-fx-background-color: ff80ed;" text="Production Supervisor" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#assignJobOnMouseClicked" prefHeight="31.0" prefWidth="187.0" text="Assign Jobs" />
+            <Button mnemonicParsing="false" onAction="#jobProgressOnMouseClicked" prefHeight="31.0" prefWidth="228.0" text="Job Progress" />
+            <Button mnemonicParsing="false" onAction="#scheduleOnMouseClicked" prefHeight="31.0" prefWidth="138.0" text="Schedule" />
+            <Button mnemonicParsing="false" onAction="#reportOnMouseClicked" prefHeight="31.0" prefWidth="155.0" text="Report" />
+            <Button mnemonicParsing="false" onAction="#productionPlanOnMouseClicked" prefHeight="31.0" prefWidth="125.0" text="Production Plan" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#inventoryOnMouseClicked" prefHeight="31.0" prefWidth="135.0" text="Inventory" />
+            <Button mnemonicParsing="false" onAction="#costReportOnMouseClicked" prefHeight="31.0" prefWidth="128.0" text="Cost Report" />
+            <Button mnemonicParsing="false" onAction="#incidentReportOnMouseClicked" prefHeight="31.0" prefWidth="130.0" text="Incident Report" />
          </children>
       </VBox>
    </left>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lavender;" BorderPane.alignment="CENTER" />
+      <AnchorPane fx:id="dashboardAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lavender;" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <Label prefHeight="21.0" prefWidth="693.0" text="Welcome {UsersName}." textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+      <Label fx:id="nameTextField" prefHeight="21.0" prefWidth="693.0" text="Welcome {UsersName}." textAlignment="RIGHT" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
