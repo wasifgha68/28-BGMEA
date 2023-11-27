@@ -25,12 +25,12 @@ public class SampleOrderbinaryfileController implements Initializable {
 
     @FXML
     private void createBinFile(ActionEvent event) {
-        List<QualityControlReport> dataList = new ArrayList<>();
-        dataList.add(new QualityControlReport(764182, "50 Jeans", "accepted", "no notes"));
-        dataList.add(new QualityControlReport(887913, "40 Shirts", "rejected", "9 defective need to be sent back"));
-        dataList.add(new QualityControlReport(985524, "80 T-shirts", "accepted", "2 defective rest fine"));
+        List<Jobs> dataList = new ArrayList<>();
+        dataList.add(new Jobs(7641, "Production", "on duty"));
+        dataList.add(new Jobs(8879, "Maintanence", "free to assign"));
+        dataList.add(new Jobs(9855, "Inspection", "off site"));
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("QualityControlReport.bin"))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Jobs.bin"))) {
             oos.writeObject(dataList);
             System.out.println("Cost Report.bin file created successfully.");
         } catch (Exception e) {
