@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.pkgfor.project.CreateSampleOrderSceneController">
+   <children>
+      <TextField fx:id="catalogNumberTextField" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="130.0" promptText="catalog number" />
+      <TextField fx:id="quantityTextField" layoutX="153.0" layoutY="14.0" prefHeight="31.0" prefWidth="112.0" promptText="quantity" />
+      <TextField fx:id="itemNameTextField" layoutX="275.0" layoutY="14.0" prefHeight="31.0" prefWidth="121.0" promptText="item name" />
+      <Button layoutX="404.0" layoutY="14.0" mnemonicParsing="false" onAction="#addOnMouseClicked" prefHeight="31.0" prefWidth="138.0" text="Add to Order List" />
+      <Button layoutX="641.0" layoutY="655.0" mnemonicParsing="false" onAction="#saveOnMouseClicked" prefHeight="31.0" prefWidth="157.0" text="Save Order List" />
+      <TableView fx:id="orderTable" layoutX="15.0" layoutY="53.0" prefHeight="590.0" prefWidth="783.0">
+        <columns>
+          <TableColumn fx:id="catalogTable" prefWidth="195.0" text="Catalog Number" />
+            <TableColumn fx:id="qualityTable" prefWidth="236.0" text="Quantity" />
+            <TableColumn fx:id="itemNameTable" prefWidth="351.0" text="Item Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="554.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteOnMouseClicked" prefHeight="31.0" prefWidth="138.0" text="Delete Selected" />
+      <Button layoutX="701.0" layoutY="14.0" mnemonicParsing="false" onAction="#openOrderOnMouseClicked" text="Open Order" />
+   </children>
+</AnchorPane>

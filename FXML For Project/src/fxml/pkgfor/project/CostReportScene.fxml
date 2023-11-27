@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.pkgfor.project.CostReportSceneController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadCROnMouseClicked" prefHeight="31.0" prefWidth="146.0" text="Load Cost Report" />
+      <TableView fx:id="costTable" editable="true" layoutX="13.0" layoutY="132.0" prefHeight="340.0" prefWidth="613.0">
+         <columns>
+            <TableColumn fx:id="dateTable" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="itemNameTable" prefWidth="116.0" text="Item Name" />
+            <TableColumn fx:id="totalSpentTable" prefWidth="170.0" text="Total Spent" />
+            <TableColumn fx:id="notesTable" prefWidth="251.0" text="Notes" />
+         </columns></TableView>
+      <Button layoutX="510.0" layoutY="480.0" mnemonicParsing="false" onAction="#saveCROnMouseClicked" prefHeight="31.0" prefWidth="107.0" text="Save" />
+      <DatePicker fx:id="dateDatePicker" layoutX="14.0" layoutY="53.0" prefHeight="31.0" prefWidth="146.0" />
+      <TextField fx:id="itemNameTextField" layoutX="169.0" layoutY="53.0" prefHeight="31.0" prefWidth="146.0" promptText="Item Name" />
+      <TextField fx:id="totalSpentTextField" layoutX="323.0" layoutY="53.0" prefHeight="31.0" prefWidth="146.0" promptText="Total Spent" />
+      <TextField fx:id="notesTextField" layoutX="478.0" layoutY="53.0" prefHeight="31.0" prefWidth="146.0" promptText="Notes" />
+      <Button layoutX="517.0" layoutY="91.0" mnemonicParsing="false" onAction="#addInstanceOnMouseClicked" text="Add Instance" />
+      <Button layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#deleteSelectedOnMouseClicked" text="Delete Selected" />
+   </children>
+</AnchorPane>
