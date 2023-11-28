@@ -15,7 +15,6 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -61,24 +60,6 @@ public class JobProgressSceneController implements Initializable {
         }
     }    
     
-
-    @FXML
-    private void closeOnMouseClicked(ActionEvent event) {
-        try {
-            List<JobProgress> tableData = new ArrayList<>();
-            for (JobProgress item : jobProgressTable.getItems()) {
-                tableData.add(item);
-            }
-            try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("JobProgress.bin"))) {
-                oos.writeObject(tableData);
-            } catch (Exception e) {
-                System.out.println("Exception occured " + e);
-            }
-        } catch (Exception e) {
-            System.out.println("Exception occured " + e);
-        }
-    }
-
     @FXML
     private void addOnMouseClicked(ActionEvent event) {
         String tasks = tasksTextField.getText();
@@ -99,5 +80,23 @@ public class JobProgressSceneController implements Initializable {
         JobProgress selectedItem = jobProgressTable.getSelectionModel().getSelectedItem();
         jobProgressTable.getItems().remove(selectedItem);
     }
+
+    @FXML
+    private void saveOnMouseClicked(ActionEvent event) {
+        try {
+            List<JobProgress> tableData = new ArrayList<>();
+            for (JobProgress item : jobProgressTable.getItems()) {
+                tableData.add(item);
+            }
+            try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("JobProgress.bin"))) {
+                oos.writeObject(tableData);
+            } catch (Exception e) {
+                System.out.println("Exception occured " + e);
+            }
+        } catch (Exception e) {
+            System.out.println("Exception occured " + e);
+        }
+    }
+    
     
 }

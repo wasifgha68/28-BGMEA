@@ -15,7 +15,7 @@
             <TableColumn fx:id="progressTable" prefWidth="86.0" text="Progress" />
         </columns>
       </TableView>
-      <Button layoutX="535.0" layoutY="402.0" mnemonicParsing="false" onAction="#closeOnMouseClicked" text="Close" />
+      <Button layoutX="506.0" layoutY="402.0" mnemonicParsing="false" onAction="#saveOnMouseClicked" prefHeight="31.0" prefWidth="86.0" text="Save" />
       <TextField fx:id="tasksTextField" layoutX="14.0" layoutY="7.0" prefHeight="31.0" prefWidth="125.0" promptText="Tasks" />
       <TextField fx:id="statusTextField" layoutX="147.0" layoutY="7.0" prefHeight="31.0" prefWidth="125.0" promptText="Status" />
       <TextField fx:id="progressTextField" layoutX="279.0" layoutY="7.0" prefHeight="31.0" prefWidth="125.0" promptText="Progress" />
