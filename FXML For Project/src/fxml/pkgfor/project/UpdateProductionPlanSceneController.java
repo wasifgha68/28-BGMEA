@@ -57,7 +57,7 @@ public class UpdateProductionPlanSceneController implements Initializable {
             ArrayList<UpdateProductionPlan> items = (ArrayList<UpdateProductionPlan>) ois.readObject();
             prodPlanTable.getItems().setAll(items);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -71,10 +71,10 @@ public class UpdateProductionPlanSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("ProductionPlan.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 

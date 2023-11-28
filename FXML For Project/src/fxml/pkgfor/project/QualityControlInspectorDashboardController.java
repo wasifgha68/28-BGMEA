@@ -55,7 +55,7 @@ public class QualityControlInspectorDashboardController implements Initializable
                 stage.show();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -71,7 +71,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -82,7 +82,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -93,7 +93,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -104,7 +104,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -115,7 +115,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-  
+           System.out.println("Exception occured " + e);
         }
     }
 
@@ -126,7 +126,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -137,7 +137,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -148,7 +148,7 @@ public class QualityControlInspectorDashboardController implements Initializable
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
     

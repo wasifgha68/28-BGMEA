@@ -49,7 +49,7 @@ public class UpdateComplianceStatusSceneController implements Initializable {
             ArrayList<UpdateComplianceStatus> items = (ArrayList<UpdateComplianceStatus>) ois.readObject();
             complianceTable.getItems().setAll(items);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }    
 
@@ -63,10 +63,10 @@ public class UpdateComplianceStatusSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("ComplianceStatus.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 

@@ -50,7 +50,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -61,7 +61,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }        
     }
 
@@ -72,7 +72,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -83,7 +83,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -94,7 +94,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -105,7 +105,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -116,7 +116,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -127,7 +127,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
 
             dashboardAnchorPane.getChildren().setAll(dash);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -148,7 +148,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
                 stage.show();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
 
     }

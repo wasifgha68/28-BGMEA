@@ -56,7 +56,7 @@ public class ReviseScheduleSceneController implements Initializable {
             ArrayList<ReviseSchedule> items = (ArrayList<ReviseSchedule>) ois.readObject();
             scheduleTable.getItems().setAll(items);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -70,10 +70,10 @@ public class ReviseScheduleSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Schedule.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 

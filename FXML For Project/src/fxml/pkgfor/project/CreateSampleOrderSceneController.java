@@ -78,10 +78,10 @@ public class CreateSampleOrderSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("SampleOrder.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -97,7 +97,7 @@ public class CreateSampleOrderSceneController implements Initializable {
             ArrayList<CreateSampleOrder> items = (ArrayList<CreateSampleOrder>) ois.readObject();
             orderTable.getItems().setAll(items);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
 
     }

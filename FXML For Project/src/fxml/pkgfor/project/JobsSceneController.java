@@ -53,7 +53,7 @@ public class JobsSceneController implements Initializable {
             ArrayList<Jobs> items = (ArrayList<Jobs>) ois.readObject();
             jobsTable.getItems().setAll(items);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }    
 
@@ -88,10 +88,10 @@ public class JobsSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Jobs.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
     

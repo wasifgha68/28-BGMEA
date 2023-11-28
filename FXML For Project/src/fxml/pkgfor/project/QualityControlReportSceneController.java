@@ -63,7 +63,7 @@ public class QualityControlReportSceneController implements Initializable {
             List<QualityControlReport> entries = (List<QualityControlReport>) ois.readObject();
             QCRTable.getItems().setAll(entries);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -96,10 +96,10 @@ public class QualityControlReportSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("QualityControlReport.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
     

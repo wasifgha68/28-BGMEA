@@ -65,7 +65,7 @@ public class CostReportSceneController implements Initializable {
             List<CostReport> entries = (List<CostReport>) ois.readObject();
             costTable.getItems().setAll(entries);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
@@ -79,10 +79,10 @@ public class CostReportSceneController implements Initializable {
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("CostReport.bin"))) {
                 oos.writeObject(tableData);
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception occured " + e);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Exception occured " + e);
         }
     }
 
