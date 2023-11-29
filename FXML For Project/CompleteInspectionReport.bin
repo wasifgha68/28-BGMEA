@@ -1,0 +1,22 @@
+Subject: {subject}
+To: {receiver}
+From: {sender}
+Date: {date}
+
+Inspection Overview:
+{inspection overview summary}
+
+Findings:
+{finding-1}
+{finding-2}
+{finding-n}
+
+Action Taken:
+{any actions taken}
+
+Recommendations:
+{any recommendation}
+
+Sadman Sakib
+Quality Control Inspector
+[email adress]

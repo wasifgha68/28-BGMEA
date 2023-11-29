@@ -4,7 +4,7 @@
  */
 package fxml.pkgfor.project;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -54,7 +54,7 @@ public class QualityControlInspectorDashboardController implements Initializable
                 stage.sizeToScene();
                 stage.show();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -70,7 +70,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("GarmentListScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -81,7 +81,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("FabricORMaterialListScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -92,7 +92,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("CreateInspectionReportScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -103,7 +103,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("CreateWorkmanshipReportScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -114,7 +114,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("UpdateComplianceStatusScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
            System.out.println("Exception occured " + e);
         }
     }
@@ -125,7 +125,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("TrainingMaterialScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -136,7 +136,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("CreateSampleOrderScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -147,7 +147,7 @@ public class QualityControlInspectorDashboardController implements Initializable
             Parent dash = FXMLLoader.load(getClass().getResource("QualityControlReportScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }

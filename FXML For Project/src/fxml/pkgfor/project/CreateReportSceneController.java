@@ -19,10 +19,10 @@ import javafx.scene.control.TextArea;
  *
  * @author ASUS
  */
-public class CreateInspectionReportSceneController implements Initializable {
+public class CreateReportSceneController implements Initializable {
 
     @FXML
-    private TextArea reportTemplateTextArea;
+    private TextArea reportTextArea;
 
     /**
      * Initializes the controller class.
@@ -33,23 +33,23 @@ public class CreateInspectionReportSceneController implements Initializable {
     }    
 
     @FXML
-    private void generateTemplateOnMouseClicked(ActionEvent event) {
-        File file = new File("InspectionReportTemplate.bin");
+    private void loadTemplateOnMouseClicked(ActionEvent event) {
+        File file = new File("ReportTemplate.bin");
         try (FileInputStream fis = new FileInputStream(file)) {
             byte[] data = new byte[(int) file.length()];
             fis.read(data);
             String content = new String(data, "UTF-8");
-            reportTemplateTextArea.setText(content);
+            reportTextArea.setText(content);
         } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
 
     @FXML
-    private void saveReportOnMouseClicked(ActionEvent event) {
-        File file = new File("CompleteInspectionReport.bin");
+    private void saveOnMouseClicked(ActionEvent event) {
+        File file = new File("CompleteReport.bin");
         try (FileOutputStream fos = new FileOutputStream(file)) {
-            byte[] content = reportTemplateTextArea.getText().getBytes("UTF-8");
+            byte[] content = reportTextArea.getText().getBytes("UTF-8");
             fos.write(content);
         } catch (Exception e) {
             System.out.println("Exception occured " + e);

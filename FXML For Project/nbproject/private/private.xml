@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/SampleOrderbinaryfileController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/FXMLForProject.java</file>
-            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/CostReportSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/FabricORMaterialListSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/JobProgressSceneController.java</file>
-            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/FabMatList.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/CreateInspectionReportSceneController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/IncidentReportSceneController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/CreateWorkmanshipReportSceneController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/28-BGMEA/FXML%20For%20Project/src/fxml/pkgfor/project/TrainingMaterialSceneController.java</file>
         </group>
     </open-files>
 </project-private>

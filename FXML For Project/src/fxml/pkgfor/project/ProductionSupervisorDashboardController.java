@@ -4,7 +4,7 @@
  */
 package fxml.pkgfor.project;
 
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -49,7 +49,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("JobsScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -60,7 +60,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("JobProgressScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }        
     }
@@ -71,7 +71,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("ReviseScheduleScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -79,10 +79,10 @@ public class ProductionSupervisorDashboardController implements Initializable {
     @FXML
     private void reportOnMouseClicked(ActionEvent event) {
         try {
-            Parent dash = FXMLLoader.load(getClass().getResource("SendingReportScene.fxml"));
+            Parent dash = FXMLLoader.load(getClass().getResource("CreateReportScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -93,7 +93,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("UpdateProductionPlanScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -104,7 +104,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("InventoryRecordScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -115,7 +115,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("CostReportScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -126,7 +126,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
             Parent dash = FXMLLoader.load(getClass().getResource("IncidentReportScene.fxml"));
 
             dashboardAnchorPane.getChildren().setAll(dash);
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
     }
@@ -147,7 +147,7 @@ public class ProductionSupervisorDashboardController implements Initializable {
                 stage.sizeToScene();
                 stage.show();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Exception occured " + e);
         }
 
