@@ -18,7 +18,8 @@ public class FXMLForProject extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("QualityControlInspectorDashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("QualityControlInspectorDashboard.fxml"));
 //        Parent root = FXMLLoader.load(getClass().getResource("ProductionSupervisorDashboard.fxml"));
 //        Parent root = FXMLLoader.load(getClass().getResource("SampleOrderbinaryfile.fxml"));
         

@@ -13,7 +13,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -25,8 +24,6 @@ import javafx.stage.Stage;
  */
 public class QualityControlInspectorDashboardController implements Initializable {
 
-    @FXML
-    private Label nameLabel;
     @FXML
     private AnchorPane dashboardAnchorPane;
 
@@ -41,7 +38,7 @@ public class QualityControlInspectorDashboardController implements Initializable
     @FXML
     private void logoutOnMouseClicked(ActionEvent event) {
         try {
-            Parent loginRoot = FXMLLoader.load(getClass().getResource("ProductionSupervisorDashboard.fxml"));
+            Parent loginRoot = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
 
             MenuItem menuItem = (MenuItem) event.getSource();
             Stage stage = null;
