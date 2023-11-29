@@ -48,9 +48,6 @@ public class CostReportSceneController implements Initializable {
     @FXML
     private TextField notesTextField;
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         dateTable.setCellValueFactory(new PropertyValueFactory<>("date"));
