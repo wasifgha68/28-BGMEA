@@ -67,8 +67,9 @@ public class LoginSceneController implements Initializable {
                     stage.setScene(scene);
                 }
             }
-        } catch (Exception e) {
             alertLabel.setText("Incorrect ID or password. Try again!");
+        } catch (Exception e) {
+            System.out.println("Exception occured " + e);
         }
     }
 
