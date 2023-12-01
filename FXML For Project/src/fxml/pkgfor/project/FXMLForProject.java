@@ -8,6 +8,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -27,6 +28,8 @@ public class FXMLForProject extends Application {
         
         stage.setScene(scene);
         stage.show();
+        stage.setTitle("BGMEA");
+        stage.getIcons().add(new Image("file:bgmea_logo.png"));
     }
 
     /**
