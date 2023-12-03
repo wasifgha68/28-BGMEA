@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg213.amartya.CustomerRetentionController">
+    <children>
+        <Label text="Customer Retention" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+        
+        <!-- Input Fields for Customer Data -->
+        <HBox spacing="10">
+            <children>
+                <TextField fx:id="customerNameInput" promptText="Customer Name" />
+                <TextField fx:id="lastPurchaseDateInput" promptText="Last Purchase Date" />
+                <TextField fx:id="purchaseFrequencyInput" promptText="Purchase Frequency" />
+            </children>
+        </HBox>
+
+        <!-- Table to Display Customer Data -->
+        <TableView fx:id="customerRetentionTable" prefHeight="200.0" prefWidth="300.0">
+            <columns>
+                <TableColumn text="Customer Name" />
+                <TableColumn text="Last Purchase Date" />
+                <TableColumn text="Purchase Frequency" />
+                <TableColumn text="Retention Actions" />
+            </columns>
+        </TableView>
+
+        <!-- Buttons for Actions -->
+        <HBox spacing="10">
+            <children>
+                <Button text="Add to Table" fx:id="addToTableButton" onAction="#handleAddToTableAction"/>
+                <Button text="Save Data" fx:id="saveDataButton" onAction="#handleSaveDataAction"/>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+</VBox>
