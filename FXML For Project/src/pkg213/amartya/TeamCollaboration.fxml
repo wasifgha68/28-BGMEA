@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg213.amartya.TeamCollaborationController">
+    <children>
+        <Label text="Team Collaboration" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+
+        <!-- Team Members List -->
+        <ListView fx:id="teamMembersList" prefHeight="100.0" prefWidth="200.0" />
+
+        <!-- Message Board for Team Communication -->
+        <Label text="Message Board" style="-fx-font-size: 14;" />
+        <TextArea fx:id="messageBoard" prefHeight="100.0" prefWidth="300.0" wrapText="true" />
+
+        <!-- Input Field and Button for Posting Messages -->
+        <HBox spacing="10">
+            <children>
+                <TextArea fx:id="messageInput" promptText="Type your message here..." prefHeight="50.0" prefWidth="200.0" wrapText="true"/>
+                <Button text="Post Message" fx:id="postMessageButton" onAction="#handlePostMessageAction"/>
+            </children>
+        </HBox>
+
+        <!-- Task Management Section -->
+        <!-- Further components like task lists, assignment buttons, etc., can be added here -->
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+</VBox>
