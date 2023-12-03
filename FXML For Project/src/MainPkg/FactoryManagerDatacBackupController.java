@@ -30,10 +30,12 @@ public class FactoryManagerDatacBackupController implements Initializable
     private final  vendorFileHandler vedorHandler = new  vendorFileHandler();
     private final  SupplierFileHandler supplierHandler = new  SupplierFileHandler();
     private  incidentFileHandler fileHandler = new incidentFileHandler(); 
+    private RawMaterialFileHandler RawfileMaterialHandler = new RawMaterialFileHandler();
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) 
     {
-        FactoryManagerDataComboBox.getItems().addAll("Supplier Profile", "Vendor Profile","Incident Report","Request Webinar");
+        FactoryManagerDataComboBox.getItems().addAll("Supplier Profile", "Vendor Profile","Incident Report","Request Webinar","Raw Material");
     }    
 
     @FXML
@@ -65,6 +67,12 @@ public class FactoryManagerDatacBackupController implements Initializable
             ProgramFileHandler ProgramFileHandler = new ProgramFileHandler();
             ArrayList<Program> Program = ProgramFileHandler.loadProgramListFromFile("ProgramDetails.bin");
             displayProgramData(Program);
+        }
+        else if (selectedDataType.equals("Raw Material")) 
+        {
+            RawMaterialFileHandler RawfileHandler = new RawMaterialFileHandler();
+            ArrayList<RawMaterial> RawMaterial = RawfileHandler.loadRawMaterialListFromFile("RawmaterialDetails.bin");
+            displayRawMaterialData(RawMaterial);
         }
         }
     }
@@ -171,4 +179,30 @@ public class FactoryManagerDatacBackupController implements Initializable
         }
         return display;
     }
+    private void displayRawMaterialData(ArrayList<RawMaterial> RawMaterial) 
+    {
+        if (RawMaterial != null && !RawMaterial.isEmpty()) 
+        {
+            StringBuilder display = generateRawMaterialInfo(RawMaterial);
+            FactoryManagerTextArea.setText(display.toString());
+        } 
+        else 
+        {
+            FactoryManagerTextArea.setText("No program data found.");
+        }
+    }
+    private StringBuilder generateRawMaterialInfo(ArrayList<RawMaterial> rawMaterials) {
+    StringBuilder display = new StringBuilder();
+    for (RawMaterial material : rawMaterials) {
+        display.append("Material ID: ").append(material.getRawMaterialID()).append("\n")
+            .append("Supplier Name: ").append(material.getSupplierName()).append("\n")
+            .append("Material Name: ").append(material.getMaterialName()).append("\n")
+            .append("Quantity: ").append(material.getQuantity()).append("\n")
+            .append("Unit Price: ").append(material.getUnitPrice()).append("\n")
+            .append("Total Price: ").append(material.getTotalPrice()).append("\n")
+            .append("......").append("\n");
+    }
+    return display;
+}
+
 }

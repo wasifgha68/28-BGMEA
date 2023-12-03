@@ -14,10 +14,10 @@
       <Label layoutX="48.0" layoutY="35.0" text="Vendor name" />
       <Label layoutX="48.0" layoutY="79.0" text="Vendor ID" />
       <Label layoutX="376.0" layoutY="35.0" text="Vendor Contact" />
-      <TextField fx:id="VendorNameTextField" layoutX="140.0" layoutY="31.0" />
-      <TextField fx:id="VendorIDTextField" layoutX="140.0" layoutY="75.0" />
-      <TextField fx:id="VendorContactTextField" layoutX="512.0" layoutY="31.0" />
-      <DatePicker fx:id="VendorDatePicker" layoutX="383.0" layoutY="74.0" prefHeight="26.0" prefWidth="300.0" />
+      <TextField fx:id="VendorNameTextField" layoutX="162.0" layoutY="31.0" />
+      <TextField fx:id="VendorIDTextField" layoutX="162.0" layoutY="75.0" />
+      <TextField fx:id="VendorContactTextField" layoutX="495.0" layoutY="31.0" prefHeight="26.0" prefWidth="150.0" />
+      <DatePicker fx:id="VendorDatePicker" layoutX="383.0" layoutY="74.0" prefHeight="26.0" prefWidth="262.0" />
       <RadioButton fx:id="AddNewVendorRB" layoutX="74.0" layoutY="120.0" mnemonicParsing="false" text="Add New Details" />
       <RadioButton fx:id="ModifyVendorDetailsRB" layoutX="230.0" layoutY="120.0" mnemonicParsing="false" text="Modify Details" />
       <RadioButton fx:id="CancelVendorDetailsRB" layoutX="383.0" layoutY="120.0" mnemonicParsing="false" text="Cancel Details" />

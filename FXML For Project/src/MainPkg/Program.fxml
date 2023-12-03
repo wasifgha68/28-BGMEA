@@ -11,28 +11,27 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPkg.ProgramController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPkg.ProgramController">
    <children>
       <Label layoutX="35.0" layoutY="37.0" text="Request Training Webiner" />
       <Label layoutX="91.0" layoutY="78.0" text="Date" />
-      <TextField fx:id="TrainigWebinerTextField" layoutX="194.0" layoutY="33.0" promptText="Program Name" />
-      <DatePicker fx:id="WebinerDatePicker" layoutX="193.0" layoutY="74.0" prefHeight="26.0" prefWidth="150.0" />
-      <Label layoutX="378.0" layoutY="37.0" text="Description" />
-      <TextArea fx:id="WebinerDescription" layoutX="378.0" layoutY="59.0" prefHeight="66.0" prefWidth="342.0" promptText="Description" />
+      <TextField fx:id="TrainigWebinerTextField" layoutX="229.0" layoutY="34.0" prefHeight="26.0" prefWidth="138.0" promptText="Program Name" />
+      <DatePicker fx:id="WebinerDatePicker" layoutX="228.0" layoutY="75.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="451.0" layoutY="24.0" text="Description" />
+      <TextArea fx:id="WebinerDescription" layoutX="451.0" layoutY="53.0" prefHeight="66.0" prefWidth="342.0" promptText="Description" />
       <Label layoutX="60.0" layoutY="116.0" text="Employee Name" />
-      <ComboBox fx:id="EmployeeNameComboBox" layoutX="193.0" layoutY="112.0" opacity="0.57" prefWidth="150.0" promptText="Factory Manager" />
-      <RadioButton fx:id="RequestIncidentRB" layoutX="378.0" layoutY="138.0" mnemonicParsing="false" text="Request Incident" />
-      <RadioButton fx:id="ModifyIncidentRB" layoutX="517.0" layoutY="138.0" mnemonicParsing="false" text="Modify Incident" />
-      <Button layoutX="39.0" layoutY="174.0" mnemonicParsing="false" onAction="#RequestWebinerOnclick" prefHeight="26.0" prefWidth="680.0" text="Request" />
-      <TableView fx:id="WebinerTableView" layoutX="34.0" layoutY="212.0" prefHeight="200.0" prefWidth="687.0">
+      <ComboBox fx:id="EmployeeNameComboBox" layoutX="228.0" layoutY="113.0" opacity="0.57" prefWidth="150.0" promptText="Factory Manager" />
+      <RadioButton fx:id="RequestIncidentRB" layoutX="456.0" layoutY="138.0" mnemonicParsing="false" text="Request Incident" />
+      <RadioButton fx:id="ModifyIncidentRB" layoutX="620.0" layoutY="138.0" mnemonicParsing="false" text="Modify Incident" />
+      <Button layoutX="39.0" layoutY="191.0" mnemonicParsing="false" onAction="#RequestWebinerOnclick" prefHeight="26.0" prefWidth="756.0" text="Request" />
+      <TableView fx:id="WebinerTableView" layoutX="35.0" layoutY="249.0" prefHeight="200.0" prefWidth="756.0">
          <columns>
             <TableColumn fx:id="ProgramNameColTB" prefWidth="101.5999755859375" text="Program Name" />
             <TableColumn fx:id="DateColTB" prefWidth="78.39990234375" text="Date" />
-            <TableColumn fx:id="DescriptionColTB" prefWidth="398.4000549316406" text="Description" />
-            <TableColumn fx:id="StatusColTB" prefWidth="108.0" text="Status" />
+            <TableColumn fx:id="DescriptionColTB" prefWidth="455.1999969482422" text="Description" />
+            <TableColumn fx:id="StatusColTB" prefWidth="119.99993896484375" text="Status" />
          </columns>
       </TableView>
-      <Button layoutX="39.0" layoutY="432.0" mnemonicParsing="false" onAction="#ConfirmOnClick" prefHeight="26.0" prefWidth="680.0" text="Confirm" />
+      <Button layoutX="38.0" layoutY="487.0" mnemonicParsing="false" onAction="#ConfirmOnClick" prefHeight="26.0" prefWidth="756.0" text="Confirm" />
    </children>
 </AnchorPane>

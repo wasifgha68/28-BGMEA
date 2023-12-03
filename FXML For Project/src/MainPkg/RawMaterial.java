@@ -1,24 +1,26 @@
 package MainPkg;
 import java.io.Serializable;
 
-public class RRawMaterial implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class RawMaterial implements Serializable {
+    
 
     private int rawMaterialID;
+    private String SupplierName;
     private String materialName;
     private double quantity;
     private double unitPrice;
     private double totalPrice;
 
-    public RRawMaterial(int rawMaterialID, String materialName, double quantity, double unitPrice,double totalPrice) {
+    public RawMaterial(int rawMaterialID, String SupplierName, String materialName, double quantity, double unitPrice) {
         this.rawMaterialID = rawMaterialID;
+        this.SupplierName= SupplierName;
         this.materialName = materialName;
         this.quantity = quantity;
         this.unitPrice = unitPrice;
         this.totalPrice = quantity * unitPrice;
     }
 
-    // Getters and Setters for all fields
+    
     public int getRawMaterialID() {
         return rawMaterialID;
     }
@@ -61,12 +63,19 @@ public class RRawMaterial implements Serializable {
         this.totalPrice = totalPrice;
     }
 
-    @Override
-    public String toString() {
-        return "RawMaterialID: " + rawMaterialID +
-                ", MaterialName: " + materialName +
-                ", Quantity: " + quantity +
-                ", UnitPrice: " + unitPrice +
-                ", TotalPrice: " + totalPrice;
+    public String getSupplierName() {
+        return SupplierName;
     }
+
+    public void setSupplierName(String SupplierName) {
+        this.SupplierName = SupplierName;
+    }
+    public double calculateTotalPrice() {
+        return this.quantity * this.unitPrice;
+    }
+
+    
+    
+    
+    
 }
