@@ -74,7 +74,8 @@ public class AccountManagementController implements Initializable
         AddNewEmployeeRB.setToggleGroup(toggleGroup);
         DeactivateEmployeeRB.setToggleGroup(toggleGroup);
         ModifyInfoRB.setToggleGroup(toggleGroup);
-        ObservableList<String> employeeTypes = FXCollections.observableArrayList("Full-Time", "Part-Time", "Contract", "Intern");
+        ObservableList<String> employeeTypes = FXCollections.observableArrayList("Administration","Factory Manager","Production Supervisor","Quality Control Inspector",
+                                                                                         "Shipping and LogisticsCoordinator","Sales Representative","Accountant", "Human Resources Manager");
         EmployeeTypeComboBox.setItems(employeeTypes);
         
         NameColTB.setCellValueFactory(new PropertyValueFactory<>("Name"));

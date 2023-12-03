@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="622.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="MainPkg.SupplierProfileController">
+   <children>
+      <TextField fx:id="SupplierNameTextField" layoutX="63.0" layoutY="31.0" prefHeight="26.0" prefWidth="218.0" promptText="SupplierName" />
+      <TextField fx:id="SupplierIDTextField" layoutX="63.0" layoutY="71.0" prefHeight="26.0" prefWidth="218.0" promptText="Supplier ID" />
+      <TextField fx:id="SupplierContactTextField" layoutX="305.0" layoutY="31.0" prefHeight="26.0" prefWidth="261.0" promptText="Supplier Contact" />
+      <DatePicker fx:id="DOJDatePicker" layoutX="305.0" layoutY="71.0" prefHeight="26.0" prefWidth="262.0" promptText="Date Of Joinin" />
+      <RadioButton fx:id="AddNewSupplierRB" layoutX="63.0" layoutY="125.0" mnemonicParsing="false" text="Add New Supplier" />
+      <RadioButton fx:id="ModifySupplierInformationRB" layoutX="222.0" layoutY="125.0" mnemonicParsing="false" text="Modify Supplier Information" />
+      <RadioButton fx:id="DeleteSupplierRB" layoutX="437.0" layoutY="125.0" mnemonicParsing="false" text="Delete Supplier" />
+      <TableView fx:id="SupplierTB" layoutX="63.0" layoutY="237.0" prefHeight="200.0" prefWidth="502.0">
+        <columns>
+          <TableColumn fx:id="SupplierNameColTB" prefWidth="107.20001220703125" text="Supplier Name" />
+          <TableColumn fx:id="SupplierIDTB" minWidth="0.0" prefWidth="130.4000244140625" text="Supplier ID" />
+            <TableColumn fx:id="SupplierContactColTB" minWidth="0.0" prefWidth="130.4000244140625" text="Supplier Contact" />
+            <TableColumn fx:id="DOJColTB" minWidth="0.0" prefWidth="130.4000244140625" text="Date Joining" />
+        </columns>
+      </TableView>
+      <Button layoutX="63.0" layoutY="160.0" mnemonicParsing="false" onAction="#GenerateSupplierDetailsOnClick" prefHeight="26.0" prefWidth="502.0" text="Generate Supplier Details" />
+      <Button layoutX="63.0" layoutY="198.0" mnemonicParsing="false" onAction="#ViewSupplierDetailsOnClick" prefHeight="26.0" prefWidth="502.0" text="View Supplier Details" />
+      <Button layoutX="63.0" layoutY="456.0" mnemonicParsing="false" onAction="#ConfirmOnClick" prefHeight="26.0" prefWidth="502.0" text="Confirm" />
+   </children>
+</AnchorPane>

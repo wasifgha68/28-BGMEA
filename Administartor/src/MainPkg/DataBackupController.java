@@ -109,10 +109,6 @@ public class DataBackupController implements Initializable {
         return display;
     }
 
-    @FXML
-    private void GenerateInformationOnClick(ActionEvent event) {
-        // Add logic for generating information
-    }
 }
 
 

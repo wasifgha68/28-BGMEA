@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPkg.IncidentController">
+   <children>
+      <Label layoutX="41.0" layoutY="24.0" text="BGMEA Safety and Training Dashboard" />
+      <Label layoutX="41.0" layoutY="58.0" prefHeight="18.0" prefWidth="132.0" text="Incident Name" />
+      <TextField fx:id="IncidentNameTextField" layoutX="196.0" layoutY="54.0" prefHeight="26.0" prefWidth="146.0" />
+      <Button layoutX="40.0" layoutY="200.0" mnemonicParsing="false" onAction="#ReportIncidentOnClick" prefHeight="26.0" prefWidth="765.0" text="Report" />
+      <TableView fx:id="IncidentTableView" layoutX="36.0" layoutY="275.0" prefHeight="200.0" prefWidth="774.0">
+         <columns>
+            <TableColumn fx:id="IncidentColTB" prefWidth="104.79998779296875" text="Incident Name" />
+            <TableColumn fx:id="DateColTB" prefWidth="90.40007019042969" text="Date" />
+            <TableColumn fx:id="EmployeeInvolvedTB" prefWidth="577.6000122070312" text="Employee Involved" />
+         </columns>
+      </TableView>
+      <Label layoutX="41.0" layoutY="94.0" prefHeight="18.0" prefWidth="132.0" text="Date" />
+      <DatePicker fx:id="IncidentDatePicker" layoutX="196.0" layoutY="90.0" prefHeight="26.0" prefWidth="146.0" />
+      <TextArea fx:id="DescriptionTextArea" layoutX="360.0" layoutY="56.0" prefHeight="73.0" prefWidth="443.0" promptText="Description" />
+      <RadioButton fx:id="AddIncidentRB" layoutX="374.0" layoutY="140.0" mnemonicParsing="false" text="Add Incident details" />
+      <RadioButton fx:id="ModifyIncidentRB" layoutX="588.0" layoutY="140.0" mnemonicParsing="false" text="Modify Incident details" />
+      <Label layoutX="41.0" layoutY="129.0" prefHeight="18.0" prefWidth="132.0" text="Employee Name" />
+      <TextField fx:id="EmployeeNameTextField" layoutX="196.0" layoutY="125.0" prefHeight="26.0" prefWidth="146.0" />
+      <Button layoutX="36.0" layoutY="496.0" mnemonicParsing="false" onAction="#ConfirmOnClick" prefHeight="26.0" prefWidth="765.0" text="Confirm" />
+   </children>
+</AnchorPane>

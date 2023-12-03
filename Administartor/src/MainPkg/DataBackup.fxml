@@ -15,8 +15,7 @@
 
     <!-- Confirm and Back Buttons -->
     <HBox layoutX="20.0" layoutY="350.0" spacing="10.0" />
-     <Button layoutX="20.0" layoutY="301.0" onAction="#ConfirmOnClick" prefHeight="26.0" prefWidth="670.0" text="Confirm" />
-     <Button layoutX="20.0" layoutY="262.0" onAction="#GenerateInformationOnClick" prefHeight="26.0" prefWidth="669.0" text="Generate Information" />
+     <Button layoutX="20.0" layoutY="275.0" onAction="#ConfirmOnClick" prefHeight="26.0" prefWidth="670.0" text="Confirm" />
    <TextArea fx:id="DataTextArea" layoutX="20.0" layoutY="49.0" prefHeight="200.0" prefWidth="670.0" />
 
 </AnchorPane>

@@ -80,9 +80,37 @@ public class Event2Controller implements Initializable {
         StatusColTB.setCellValueFactory(new PropertyValueFactory<>("status"));
         
         EventTypeComboBox.getItems().addAll("Holiday", "Leave", "Normal Event");
-        ObservableList<String> employeeType = FXCollections.observableArrayList("Full-Time", "Part-Time", "Contract", "Intern");
+        ObservableList<String> employeeType = FXCollections.observableArrayList("Administration","Factory Manager:","Production Supervisor","Quality Control Inspector",
+                                                                                         "Shipping and LogisticsCoordinator","Sales Representative","Accountant","Human Resources Manager");
         EmployeeTypeComboBox.setItems(employeeType);
     } 
+    
+    private void comparePasswordsAndAlert(String nameToCompare, String enteredPassword) {
+        try (FileInputStream fileIn = new FileInputStream("employeeDetails.bin");
+             ObjectInputStream objectIn = new ObjectInputStream(fileIn)) {
+
+            employeeList = FXCollections.observableArrayList((ArrayList<EymployeeDetails>) objectIn.readObject());
+            boolean nameFound = false;
+            for (EymployeeDetails employee : employeeList) {
+                if (employee.getEmployeeName().equals(nameToCompare)) {
+                    nameFound = true;
+                    if (employee.getPassword().equals(enteredPassword)) {
+                        showAlert("Password Match", "Password provided is correct.");
+                    } else {
+                        showAlert("Password Mismatch", "Password provided is incorrect.");
+                    }
+                    break;
+                }
+            }
+            if (!nameFound) {
+                showAlert("Employee Not Found", "No employee with the given name found.");
+            }
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            showAlert("Error", "Error loading employee details from the binary file.");
+        }
+    }
+
     private void compareNamesAndAlert(String nameToCompare) 
     {
         try (FileInputStream fileIn = new FileInputStream("employeeDetails.bin");
@@ -126,7 +154,12 @@ public class Event2Controller implements Initializable {
     @FXML private void GenerateEventOnClick(ActionEvent event) 
     {
         String nameToCompare = EmployeeNameTextField.getText();
+        String enteredPassword = EmployeePasswordTextField.getText();
+        
+
         compareNamesAndAlert(nameToCompare);
+        comparePasswordsAndAlert(nameToCompare, enteredPassword);
+
 
         if (AddRB.isSelected()) {
             addNewEvent();
@@ -148,15 +181,9 @@ public class Event2Controller implements Initializable {
         LocalDate endDate = EndDatePicker.getValue();
         String description = EventDescriptionTextarea.getText();
         String status = "Active";
-        boolean eventExists = eventList.stream().anyMatch(event -> event.getEventName().equals(eventName));
-        if (!eventExists) 
-        {
-            Event2 newEvent = new Event2(name, employeeType, eventType, eventName, startDate, endDate, description, status);
-            eventList.add(newEvent);
-            fileHandler.saveEventListToFile(eventList, filePath);
-        } else 
-        {
-            showAlert("Event Exists", "An event with the same name already exists in the list.");}
+        Event2 newEvent = new Event2(name, employeeType, eventType, eventName, startDate, endDate, description, status);
+        eventList.add(newEvent);
+        fileHandler.saveEventListToFile(eventList, filePath);
     }
     private void modifyEvent() 
     {
@@ -253,7 +280,7 @@ public class Event2Controller implements Initializable {
     private void ConfirmOnClick(ActionEvent event) 
     {
         fileHandler.saveEventListToFile(eventList, filePath);
-        
+        printEventList();
         
     }
     private void printEventList() 

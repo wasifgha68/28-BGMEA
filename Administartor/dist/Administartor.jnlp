@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Administartor.jar" size="40764" download="eager" />
+    <jar href="Administartor.jar" size="82491" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="MainPkg.mainApplication"  name="Administartor" />
   <update check="always"/>
