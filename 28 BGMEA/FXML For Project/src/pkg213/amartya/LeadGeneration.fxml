@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="pkg213.amartya.LeadGeneratorController">
+    <children>
+        <VBox spacing="10" layoutX="50" layoutY="30">
+            <children>
+                <Label text="Lead Generator" />
+                <TextField fx:id="leadName" promptText="Lead Name" />
+                <TextField fx:id="contactInfo" promptText="Contact Info" />
+                <TextArea fx:id="leadDetails" promptText="Lead Details" prefHeight="100.0" />
+                <Button fx:id="submitLead" text="Submit" onAction="#submitLeadInfo" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
