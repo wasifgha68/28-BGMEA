@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="888.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        
+        <!-- TextArea -->
+        <TextArea layoutX="60.0" layoutY="213.0" prefHeight="100.0" prefWidth="700.0" promptText="Enter Performance Notes" />
+      <Label layoutX="58.0" layoutY="56.0" text="Employee ID" />
+      <Label layoutX="60.0" layoutY="92.0" text="Department" />
+      <Label layoutX="60.0" layoutY="129.0" text="Employee Name" />
+      <TextField layoutX="180.0" layoutY="52.0" />
+      <ComboBox layoutX="180.0" layoutY="88.0" prefWidth="150.0" />
+      <Label layoutX="180.0" layoutY="128.0" prefHeight="19.0" prefWidth="150.0" style="-fx-border-color: Black;" />
+      <Button layoutX="401.0" layoutY="78.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="222.0" text="Add Performance note" />
+      <Button layoutX="400.0" layoutY="114.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="222.0" text="Modify Performance note" />
+      <Button layoutX="60.0" layoutY="567.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="700.0" text="Generate Employee Performance Remark" />
+      <TableView layoutX="60.0" layoutY="344.0" prefHeight="200.0" prefWidth="700.0">
+         <columns>
+            <TableColumn prefWidth="116.00006103515625" text="Program Name" />
+            <TableColumn prefWidth="103.199951171875" text="Date" />
+            <TableColumn prefWidth="480.800048828125" text="Description" />
+         </columns>
+      </TableView>
+      <Button layoutX="401.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="222.0" text="Generate Available Program" />
+      <Label layoutX="60.0" layoutY="164.0" text="Suggest Program" />
+      <ComboBox layoutX="180.0" layoutY="160.0" prefWidth="150.0" />
+      <TextArea layoutX="60.0" layoutY="617.0" prefHeight="200.0" prefWidth="700.0" promptText="Performance detail of Employee" />
+      <Button layoutX="60.0" layoutY="834.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="700.0" text="Confirm" />
+    </children>
+</AnchorPane>
