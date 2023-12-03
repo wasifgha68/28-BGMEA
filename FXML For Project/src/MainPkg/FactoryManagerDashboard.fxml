@@ -28,6 +28,7 @@
                 <Button mnemonicParsing="false" onAction="#VendorListOnMouseClicked" prefHeight="31.0" prefWidth="138.0" text="Vendor List" />
             <Button layoutX="10.0" layoutY="72.0" mnemonicParsing="false" onAction="#ReportIncidentOnClick" prefHeight="31.0" prefWidth="138.0" text="Incident report" />
             <Button mnemonicParsing="false" onAction="#RequestWebinarOnClick" prefHeight="31.0" prefWidth="138.0" text="Request webinar " />
+            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" onAction="#RawmaterialOnClick" prefHeight="31.0" prefWidth="138.0" text="Raw material" />
             </children>
         </VBox>
     </left>

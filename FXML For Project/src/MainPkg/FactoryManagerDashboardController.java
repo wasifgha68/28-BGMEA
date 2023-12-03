@@ -67,6 +67,13 @@ public class FactoryManagerDashboardController {
             e.printStackTrace();           
         }
     }
+    @FXML private void RawmaterialOnClick(ActionEvent event) {
+        try {
+            loadFXML("RawMaterial.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();           
+        }
+    }
 
     private void loadFXML(String fxmlFileName) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));

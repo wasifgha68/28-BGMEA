@@ -69,6 +69,9 @@ public class VendorController implements Initializable {
         VendorIDColTB.setCellValueFactory(new PropertyValueFactory<>("id"));
         VendorContactColTB.setCellValueFactory(new PropertyValueFactory<>("contact"));
         VendorDOJTB.setCellValueFactory(new PropertyValueFactory<>("dateOfJoining"));
+        
+        loadVendorDataFromFile();
+        VendorTableView.setItems(VendorList);
     }    
 
     @FXML private void GenerateVendorDetailsOnClick(ActionEvent event) 
@@ -250,7 +253,11 @@ public class VendorController implements Initializable {
     private void ConfirmOnClick(ActionEvent event) 
     {
         saveVendorDataToFile();
-        
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Success");
+        alert.setHeaderText(null);
+        alert.setContentText("It works");
+        alert.showAndWait();
     }
     
 }
